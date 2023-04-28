@@ -37,4 +37,4 @@ int compute_score(string word)
     return points;
 }
 
-printf('%i', points);
+printf( "this is %i\n", points);
