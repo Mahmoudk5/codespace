@@ -19,10 +19,22 @@ int main(void)
     int score2 = compute_score(word2);
 
     // TODO: Print the winner
+
 }
 
 int compute_score(string word)
 {
     // TODO: Compute and return score for string
-    
+    int points = 0;
+    for(int i = 0; i < strlen(word); i++)
+    {
+        if(isalpha(word[i]))
+        {
+            int letter_s = toupper(word[i]) - 65;
+            points += POINTS[letter_s];
+        }
+    }
+    return points;
 }
+
+printf('%i', points);
